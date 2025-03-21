@@ -51,7 +51,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ env.IMAGE_TAG }}:${{ env.VERSION }
+          tags: ${{ env.IMAGE_TAG }}:${{ env.VERSION }}
   
   deploy:
     needs: build-and-push
